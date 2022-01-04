@@ -1,0 +1,79 @@
+/* input number 했을때 우측 버튼 없에기 */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.search {
+  width: 300px;
+}
+
+.phoneListWrap {
+  padding-top: 100px;
+}
+
+.phoneList {
+  border: 1px solid teal;
+  width: 700px;
+}
+
+.phoneList div {
+  display: inline-block;
+  margin-left: 20px;
+  width: 30%;
+}
+
+.update {
+  margin-right: 5px;
+}
+
+.phoneList input {
+  display: inline-block;
+  margin-left: 30px;
+  width: 50px;
+}
+
+.phoneList .deleteCheck {
+  margin-left: 0px;
+}
+
+/* 전화번호 없을때 */
+.emptyList {
+  margin-left: 10%;
+  margin-top: 20%;
+}
+
+/* 전화번호 없을때 */
+.emptyList p {
+  font-size: 30px;
+}
+
+/* 수정위젯 */
+.updatePhoneList {
+  border: 1px solid teal;
+  width: 700px;
+  height: 53px;
+}
+
+.updatePhoneList div {
+  display: inline-block;
+  margin-left: 20px;
+  margin-top: 15px;
+}
+.updateWiget.div {
+  margin-left: 25px;
+}
+
+.updateWiget.input {
+  width: 150px;
+}
+
+.updateWiget.btn input {
+  margin-left: 35px;
+  width: 70px;
+}
+
+.updateWiget.btn.cancle input {
+  margin-left: 5px;
+  width: 70px;
+}

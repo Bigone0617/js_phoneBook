@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>phone book</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="inputInfoWrapper">
+            <form>
+                이름 : <input type="text"  id="name" placeholder="이름 입력해주세요" autofocus>
+                번호 : <input type="number"  id="number" placeholder="- 없이 번호 입력">
+                <input type="submit" value="저장" onclick="save('name', 'number')">
+            </form>
+            <label>검색 : </label>
+            <input type="text" class="search" onkeyup="search(this)" placeholder="이름 혹은 전화번호 입력해주세요">
+        </div>
+        <div class="phoneListWrap"> 
+
+        </div>
+    </div>
+    <script src='../js/main.js'></script>
+</body>
+</html>
