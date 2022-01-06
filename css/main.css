@@ -109,6 +109,7 @@ input::-webkit-inner-spin-button {
 /* 전화번호 없을때 */
 .emptyList p {
   font-size: 30px;
+  color: #aeb1b8;
 }
 
 /* 수정위젯 */
