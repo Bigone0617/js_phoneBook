@@ -3,24 +3,70 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
-
+/** top element start*/
 .search {
-  width: 300px;
+  width: 50%;
 }
 
+#name,
+#number,
+.search {
+  border: 0px;
+  border-bottom: 1px solid #db7093;
+}
+
+#name:focus,
+#number:focus,
+.search:focus {
+  outline: none;
+}
+
+#saveNew {
+  background-color: #ffe4e1;
+  border: 0.5px solid #ffc0cb;
+  color: plum;
+}
+
+#saveNew:hover {
+  background-color: #ffc0cb;
+  cursor: pointer;
+}
+
+/** top element end*/
+
+/** list element start*/
 .phoneListWrap {
   padding-top: 100px;
 }
 
 .phoneList {
-  border: 1px solid teal;
+  display: flex;
+  align-items: center;
   width: 700px;
+  background-color: EFF0F4;
+  color: #aeb1b8;
+  border: 1px solid #f5f5f5;
+}
+
+.phoneList:hover {
+  background-color: #f5f5f5;
 }
 
 .phoneList div {
-  display: inline-block;
   margin-left: 20px;
-  width: 30%;
+}
+
+.infoDiv {
+  width: 500px;
+}
+
+.infoDiv div {
+  overflow: hiddlen;
+  white-space: nowrap;
+}
+
+.infoDiv .name {
+  font-size: 20px;
 }
 
 .update {
@@ -28,13 +74,30 @@ input::-webkit-inner-spin-button {
 }
 
 .phoneList input {
-  display: inline-block;
   margin-left: 30px;
   width: 50px;
+  background-color: transparent;
+  border: none;
+  float: right;
 }
 
 .phoneList .deleteCheck {
   margin-left: 0px;
+}
+
+.toggleDelete,
+.allDelete {
+  background-color: #f5deb3;
+  border: 0.5px solid #ffebcd;
+  color: #f4af60;
+  font-weight: bold;
+}
+
+.toggleDelete:hover,
+.allDelete:hover {
+  background-color: #ffc0cb;
+  color: #ffe4e1;
+  cursor: pointer;
 }
 
 /* 전화번호 없을때 */
@@ -49,8 +112,18 @@ input::-webkit-inner-spin-button {
 }
 
 /* 수정위젯 */
+/* .updatePhoneList {
+  border: 1px solid #db7093;
+  width: 700px;
+  height: 53px;
+  background-color: #ffe4e1;
+  color: #db7093;
+} */
+
 .updatePhoneList {
-  border: 1px solid teal;
+  background-color: EFF0F4;
+  color: #aeb1b8;
+  border: 1px solid #f5f5f5;
   width: 700px;
   height: 53px;
 }
@@ -70,10 +143,15 @@ input::-webkit-inner-spin-button {
 
 .updateWiget.btn input {
   margin-left: 35px;
-  width: 70px;
+  width: 50px;
+  background-color: transparent;
+  border: 0px;
 }
 
 .updateWiget.btn.cancle input {
   margin-left: 5px;
-  width: 70px;
+  width: 50px;
+  background-color: transparent;
+  border: 0px;
 }
+/** list element end*/
